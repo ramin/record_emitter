@@ -47,12 +47,6 @@ func NewEmitter(filepath string) RecordEmitter {
 		fmt.Println(err)
 	}
 
-	err = recordEmitter.openFile()
-
-	if err != nil {
-		fmt.Println(err)
-	}
-
 	return recordEmitter
 }
 
